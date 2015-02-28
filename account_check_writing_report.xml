@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<openerp>
+    <data>
+    <report id="account_print_check_benin"
+            string="Print Check (Benin)"
+            model="account.voucher"
+            name="account.print.check.benin"
+            rml="l10n_bj_check_writing/report/check_benin.rml"
+            multi="True"
+            auto="False"/>
+            
+     </data>
+</openerp>
