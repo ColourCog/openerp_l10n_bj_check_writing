@@ -1,11 +1,18 @@
 <?xml version="1.0"?>
 <openerp>
     <data>
-    <report id="account_print_check_benin"
-            string="Print Check (Benin)"
+    <report id="account_print_check_benin_uba"
+            string="Print Check (Benin-UBA)"
             model="account.voucher"
-            name="account.print.check.benin"
-            rml="l10n_bj_check_writing/report/check_benin.rml"
+            name="account.print.check.benin.uba"
+            rml="l10n_bj_check_writing/report/check_benin_uba.rml"
+            multi="True"
+            auto="False"/>
+    <report id="account_print_check_benin_ecobank"
+            string="Print Check (Benin-ECOBANK)"
+            model="account.voucher"
+            name="account.print.check.benin.ecobank"
+            rml="l10n_bj_check_writing/report/check_benin_ecobank.rml"
             multi="True"
             auto="False"/>
             

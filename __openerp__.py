@@ -6,11 +6,21 @@
     'depends': [
         'account_check_writing',
     ],
-    'version': '0.1',
+    'version': '1.2',
     'description': """
 Benin Check Writing.
 ===========================
 This module create printable checks for the major banks in benin.
+Currently implemented banks are:
+
+* Bank Of Africa
+* BGFI
+* UBA
+* EcoBank
+* Société Générale
+* Banque Atlantique
+* Diamond Bank
+* BSIC
     """,
     'data':[
         'account_check_writing_report.xml',

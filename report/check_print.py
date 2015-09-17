@@ -23,16 +23,58 @@ class report_print_check_benin(report_sxw.rml_parse):
             return '#'+ amount +'#'
 
     def fill_stars(self, amount):
-        if len(amount) < 140:
-            stars = 140 - len(amount)
+        if len(amount) < 120:
+            stars = 120 - len(amount)
             return ' '.join([amount,'*'*stars])
 
         else: return amount
             
 report_sxw.report_sxw(
-    'report.account.print.check.benin',
+    'report.account.print.check.benin.boa',
     'account.voucher',
-    'addons/l10n_bj_check_writing/report/check_benin.rml',
+    'addons/l10n_bj_check_writing/report/check_benin_boa.rml',
+    parser=report_print_check_benin,header=False
+)
+report_sxw.report_sxw(
+    'report.account.print.check.benin.bgfi',
+    'account.voucher',
+    'addons/l10n_bj_check_writing/report/check_benin_bgfi.rml',
+    parser=report_print_check_benin,header=False
+)
+report_sxw.report_sxw(
+    'report.account.print.check.benin.sg',
+    'account.voucher',
+    'addons/l10n_bj_check_writing/report/check_benin_sg.rml',
+    parser=report_print_check_benin,header=False
+)
+report_sxw.report_sxw(
+    'report.account.print.check.benin.diamond',
+    'account.voucher',
+    'addons/l10n_bj_check_writing/report/check_benin_diamond.rml',
+    parser=report_print_check_benin,header=False
+)
+report_sxw.report_sxw(
+    'report.account.print.check.benin.atlantique',
+    'account.voucher',
+    'addons/l10n_bj_check_writing/report/check_benin_atlantique.rml',
+    parser=report_print_check_benin,header=False
+)
+report_sxw.report_sxw(
+    'report.account.print.check.benin.bsic',
+    'account.voucher',
+    'addons/l10n_bj_check_writing/report/check_benin_bsic.rml',
+    parser=report_print_check_benin,header=False
+)
+report_sxw.report_sxw(
+    'report.account.print.check.benin.uba',
+    'account.voucher',
+    'addons/l10n_bj_check_writing/report/check_benin_uba.rml',
+    parser=report_print_check_benin,header=False
+)
+report_sxw.report_sxw(
+    'report.account.print.check.benin.ecobank',
+    'account.voucher',
+    'addons/l10n_bj_check_writing/report/check_benin_ecobank.rml',
     parser=report_print_check_benin,header=False
 )
 

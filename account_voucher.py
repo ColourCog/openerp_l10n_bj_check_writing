@@ -20,7 +20,8 @@ class account_voucher(osv.osv):
             'top' : 'account.print.check.top',
             'middle' : 'account.print.check.middle',
             'bottom' : 'account.print.check.bottom',
-            'benin' : 'account.print.check.benin',
+            'benin-uba' : 'account.print.check.benin.uba',
+            'benin-ecobank' : 'account.print.check.benin.ecobank',
         }
 
         check_layout = self.browse(cr, uid, ids[0], context=context).company_id.check_layout

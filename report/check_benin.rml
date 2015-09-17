@@ -27,7 +27,7 @@
     <paraStyle name="check_city" fontSize="9.0" rightIndent="0.0" leftIndent="0.0" firstLineIndent="0.0" fontName="Helvetica"/>
     <paraStyle name="check_date" fontSize="9.0" rightIndent="0.0" leftIndent="0.0" firstLineIndent="0.0" fontName="Helvetica"/>
     <paraStyle name="aside" leading="0.4cm" fontSize="8.0" fontName="Helvetica"/>
-    <paraStyle name="logo" leading="1.0cm" fontSize="8.0" fontName="Helvetica"/>
+    <paraStyle name="logo" leading="1.3cm" fontSize="8.0" fontName="Helvetica"/>
     <images/>
   </stylesheet>
   <story>

@@ -42,6 +42,7 @@ class account_check_write(osv.osv_memory):
         #validate the checks so that they get a number
         voucher_ids = context.get('active_ids', [])
         for check in voucher_obj.browse(cr, uid, voucher_ids, context=context):
+            voucher_obj.write(cr, uid, [check.id], {"reference": new_value}, context=context)
             new_value += increment
             if check.number:
                 raise osv.except_osv(_('Error!'),_("One of the printed check already got a number."))
@@ -56,7 +57,8 @@ class account_check_write(osv.osv_memory):
             'top' : 'account.print.check.top',
             'middle' : 'account.print.check.middle',
             'bottom' : 'account.print.check.bottom',
-            'benin' : 'account.print.check.benin',
+            'benin-uba' : 'account.print.check.benin.uba',
+            'benin-ecobank' : 'account.print.check.benin.ecobank',
         }
         check_layout = voucher_obj.browse(cr, uid, voucher_ids[0], context=context).company_id.check_layout
         if not check_layout:
